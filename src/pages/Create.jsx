@@ -23,7 +23,7 @@ const Create = () => {
       <input {...register("name")} placeholder="Chef Name" className="border-b outline-0 p-2 mb-4" />
       <input type="url" {...register("image")} placeholder="Image URL" className="border-b outline-0 p-2 mb-4" />
       <textarea {...register("description")} placeholder="Description" className="border-b outline-0 p-2 mb-4" />
-      <input {...register("Instructions")} placeholder="Instructions (comma separated)" className="border-b outline-0 p-2 mb-4" />
+      <input {...register("Ingredients")} placeholder="Ingredients (comma separated)" className="border-b outline-0 p-2 mb-4" />
 
       <select className="border-b outline-0 p-2 mb-4" {...register("category")}>
         <option value= "breakFast">breakFast</option>
