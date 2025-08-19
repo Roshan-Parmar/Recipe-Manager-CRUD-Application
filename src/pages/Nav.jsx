@@ -32,6 +32,14 @@ const Nav = () => {
         className={({ isActive }) =>
           `px-4 py-2 ${isActive ? "text-red-300 font-bold" : "text-white"}`
         }
+        to="/Fav"       
+      >
+        Favorites
+      </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          `px-4 py-2 ${isActive ? "text-red-300 font-bold" : "text-white"}`
+        }
         to="/Create"
       >
         Create

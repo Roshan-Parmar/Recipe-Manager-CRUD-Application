@@ -10,8 +10,11 @@ const Create = () => {
   const { data, setData } = useContext(RecipeContext); // now works
   const navigate = useNavigate();
   const Submit = (recipe) => {
-    recipe.id = nanoid(); // not data.id
-    setData([...data, recipe]);
+    recipe.id = nanoid(); 
+    const copyData = [...data];
+    copyData.push(recipe);
+    setData(copyData);
+    localStorage.setItem("Recipes", JSON.stringify(copyData));
     toast.success("Recipe Added Successfully");
     navigate("/recipes");
     reset();
